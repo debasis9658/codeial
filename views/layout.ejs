@@ -51,5 +51,24 @@
             <% } %>
         </script>
 
+        <script>
+            window.addEventListener('scroll', function() {
+            var footer = document.getElementById('layout-footer');
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Calculate the distance between the bottom of the content and the bottom of the viewport
+            var contentHeight = document.documentElement.scrollHeight;
+            var viewportHeight = window.innerHeight;
+            var distanceToBottom = contentHeight - scrollPosition - viewportHeight;
+
+            // Show/hide the footer based on the distance to the bottom
+            if (distanceToBottom < 20) { // Adjust the threshold as needed
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+            });
+        </script>
+
     </body>
 </html>

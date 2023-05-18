@@ -1,14 +1,245 @@
-#home-container{
+// home.scss
+
+// Styling for the home container
+#home-container {
     display: flex;
-    #feed-posts{
-        width: 70%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  // Styling for the feed posts section
+  #feed-posts {
+    flex: 1;
+    max-width: 600px;
+  
+    h4 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    form {
+      textarea {
+        width: 100%;
+        height: 80px;
         padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #f5f5f5;
+        resize: none;
+        margin-bottom: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+        margin-left: 15px;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-left: 5px;
+  
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+  
+    #posts-list-container {
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 20px;
+          background-color: #fff;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+  
+          .post-content {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 16px;
+          }
+  
+          .post-info {
+            display: flex;
+            align-items: center;
+            color: #999;
+            font-size: 14px;
+  
+            .post-author {
+              margin-right: 10px;
+            }
+          }
+  
+          .post-date {
+            margin-top: 10px;
+            color: #999;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  
+  // Styling for the user friends section
+  #user-friends {
+    flex-basis: 30%;
+  
+    h4 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    p {
+      margin-bottom: 10px;
+  
+      a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #555;
+        }
+      }
+    }
+  }
+  
+
+
+  //feed post styling
+
+
+// _post.scss
+
+// _post.scss
+
+li[id^="post-"] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 20px; /* Add left margin */
+  
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+  
+      small {
+        font-size: 14px;
+        color: #666;
+      }
+  
+      .delete-post-button {
+        color: #999;
+        text-decoration: none;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #f00;
+        }
+      }
     }
 
-    #user-friends{
-        width: 30%;
-        padding: 10px;
-        border-left: 1px solid lightgray;
-        height: 100%;
+    
+  
+    .post-comments {
+      margin-top: 10px;
+  
+      form {
+        input[type="text"] {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          font-size: 14px;
+        }
+  
+        input[type="submit"] {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+  
+      .post-comments-list {
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+  
+          li {
+            font-size: 14px;
+            margin-bottom: 5px;
+  
+            .comment-author {
+              font-weight: bold;
+              margin-right: 5px;
+            }
+  
+            .comment-text {
+              display: inline;
+            }
+          }
+        }
+      }
     }
-}
+  }
+
+
+  #feed-posts {
+    // Other styles for the feed-posts section
+  
+    .comment-item {
+      list-style: none;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  
+    .comment-item p {
+      margin: 0;
+    }
+  
+    .comment-item small {
+      color: #888;
+    }
+  
+    .comment-item a {
+      text-decoration: none;
+      color: #ff5a5f;
+      font-size: 12px;
+    }
+  
+    .comment-item a:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  
+  
+  
+  

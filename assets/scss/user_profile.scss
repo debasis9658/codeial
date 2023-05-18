@@ -1,3 +1,63 @@
-body{
-    background-color: lightblue;
-}
+// Base styles
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  
+    img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  // Profile form
+  .profile-form {
+    margin-top: 20px;
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="file"] {
+      display: block;
+      margin-bottom: 10px;
+      width: 200px;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      width: 200px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+  
+  // Profile information
+  .profile-info {
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  
