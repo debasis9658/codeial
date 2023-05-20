@@ -10,7 +10,8 @@
       font-size: 24px;
       font-weight: bold;
       color: #333;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-left: 20%; }
     #layout-header nav .auth-links ul {
       list-style: none;
       margin: 0;

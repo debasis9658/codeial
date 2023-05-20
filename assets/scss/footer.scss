@@ -1,15 +1,17 @@
 // footer.scss
 
 #layout-footer {
+
   display: none;
   position: fixed;
-  bottom: 0;
+  bottom: -5;
   left: 0;
   right: 0;
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: 50; /* Push the footer to the bottom */
   background-color: #333;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
+  transition: all 0.3s ease;
 
   p {
     margin: 0;

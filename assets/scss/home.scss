@@ -5,14 +5,18 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
   }
   
   // Styling for the feed posts section
   #feed-posts {
     flex: 1;
     max-width: 600px;
+    margin-left: 3%;
   
     h4 {
+      margin-left: 40%;
       font-size: 24px;
       margin-bottom: 20px;
       color: #333;
@@ -46,7 +50,7 @@
         border-radius: 8px;
         cursor: pointer;
         transition: background-color 0.3s ease;
-        margin-left: 5px;
+        // margin-left: 5px;
   
         &:hover {
           background-color: #555;
@@ -58,6 +62,7 @@
       ul {
         list-style: none;
         padding: 0;
+        margin-bottom: 100px;
   
         li {
           margin-bottom: 20px;
@@ -174,7 +179,9 @@ li[id^="post-"] {
   
         input[type="submit"] {
           display: block;
-          width: 100%;
+          width: 33%;
+          margin-left: 33%;
+          margin-top: 5px;
           padding: 10px;
           background-color: #333;
           color: #fff;
@@ -237,7 +244,52 @@ li[id^="post-"] {
     .comment-item a:hover {
       text-decoration: underline;
     }
+
+    form#new-post-form {
+    
+      input[type="submit"] {
+        // Move submit button to the right using flexbox
+        width: 33%;
+        margin-left: 33%;
+      }
+    }
   }
+
+//Friends list
+  #user-friends {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 80;
+    margin-right: 20;
+    margin-bottom: 100px;
+  }
+  
+  #user-friends h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  #user-friends ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #user-friends li {
+    margin-bottom: 5px;
+  }
+  
+  #user-friends a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #user-friends a:hover {
+    color: #555;
+  }
+
+ 
+  
   
   
   

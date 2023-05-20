@@ -1,0 +1,28 @@
+#signup-form {
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+  
+    input[type="submit"] {
+      background-color: #4285F4;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  }
+  
