@@ -1,0 +1,21 @@
+.toggle-like-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 10%;
+  margin-left: auto;
+  /* Align the button to the right side */
+  padding: 5px 10px;
+  border: none;
+  background-color: #e0e0e0;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; }
+  .toggle-like-button:hover {
+    background-color: #ccc; }
+  .toggle-like-button.active {
+    background-color: #ff5b5b;
+    color: #fff; }
+    .toggle-like-button.active:hover {
+      background-color: #ff2b2b; }
